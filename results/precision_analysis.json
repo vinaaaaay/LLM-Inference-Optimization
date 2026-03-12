@@ -1,0 +1,188 @@
+{
+  "note": "FP8 not supported on Ampere CC 8.6. Using FP16 vs FP32 (2x data size).",
+  "principle": "If FP32 (2x data) is ~2x slower \u2192 MEMORY-BOUND. If ~1x \u2192 COMPUTE-BOUND.",
+  "kernel_analysis": [
+    {
+      "backend": "mem_efficient",
+      "kv_len": 128,
+      "fp16_ms": 0.028,
+      "fp32_ms": 0.05,
+      "fp32_fp16_ratio": 1.79,
+      "fp16_mem_mb": 0.5,
+      "fp32_mem_mb": 9.13,
+      "diagnosis": "MEMORY-BOUND"
+    },
+    {
+      "backend": "math",
+      "kv_len": 128,
+      "fp16_ms": 0.101,
+      "fp32_ms": 0.069,
+      "fp32_fp16_ratio": 0.68,
+      "fp16_mem_mb": 10.14,
+      "fp32_mem_mb": 9.64,
+      "diagnosis": "COMPUTE-BOUND"
+    },
+    {
+      "backend": "mem_efficient",
+      "kv_len": 256,
+      "fp16_ms": 0.034,
+      "fp32_ms": 0.08,
+      "fp32_fp16_ratio": 2.35,
+      "fp16_mem_mb": 9.13,
+      "fp32_mem_mb": 10.13,
+      "diagnosis": "MEMORY-BOUND"
+    },
+    {
+      "backend": "math",
+      "kv_len": 256,
+      "fp16_ms": 0.099,
+      "fp32_ms": 0.068,
+      "fp32_fp16_ratio": 0.69,
+      "fp16_mem_mb": 12.15,
+      "fp32_mem_mb": 11.15,
+      "diagnosis": "COMPUTE-BOUND"
+    },
+    {
+      "backend": "mem_efficient",
+      "kv_len": 512,
+      "fp16_ms": 0.052,
+      "fp32_ms": 0.137,
+      "fp32_fp16_ratio": 2.63,
+      "fp16_mem_mb": 10.13,
+      "fp32_mem_mb": 12.13,
+      "diagnosis": "MEMORY-BOUND"
+    },
+    {
+      "backend": "math",
+      "kv_len": 512,
+      "fp16_ms": 0.149,
+      "fp32_ms": 0.096,
+      "fp32_fp16_ratio": 0.64,
+      "fp16_mem_mb": 16.17,
+      "fp32_mem_mb": 14.16,
+      "diagnosis": "COMPUTE-BOUND"
+    },
+    {
+      "backend": "mem_efficient",
+      "kv_len": 1024,
+      "fp16_ms": 0.084,
+      "fp32_ms": 0.249,
+      "fp32_fp16_ratio": 2.96,
+      "fp16_mem_mb": 12.13,
+      "fp32_mem_mb": 16.13,
+      "diagnosis": "MEMORY-BOUND"
+    },
+    {
+      "backend": "math",
+      "kv_len": 1024,
+      "fp16_ms": 0.253,
+      "fp32_ms": 0.155,
+      "fp32_fp16_ratio": 0.61,
+      "fp16_mem_mb": 24.2,
+      "fp32_mem_mb": 20.2,
+      "diagnosis": "COMPUTE-BOUND"
+    },
+    {
+      "backend": "mem_efficient",
+      "kv_len": 1536,
+      "fp16_ms": 0.115,
+      "fp32_ms": 0.363,
+      "fp32_fp16_ratio": 3.16,
+      "fp16_mem_mb": 14.13,
+      "fp32_mem_mb": 20.13,
+      "diagnosis": "MEMORY-BOUND"
+    },
+    {
+      "backend": "math",
+      "kv_len": 1536,
+      "fp16_ms": 0.353,
+      "fp32_ms": 0.213,
+      "fp32_fp16_ratio": 0.6,
+      "fp16_mem_mb": 32.23,
+      "fp32_mem_mb": 26.23,
+      "diagnosis": "COMPUTE-BOUND"
+    },
+    {
+      "backend": "mem_efficient",
+      "kv_len": 2048,
+      "fp16_ms": 0.145,
+      "fp32_ms": 0.476,
+      "fp32_fp16_ratio": 3.28,
+      "fp16_mem_mb": 16.13,
+      "fp32_mem_mb": 24.13,
+      "diagnosis": "MEMORY-BOUND"
+    },
+    {
+      "backend": "math",
+      "kv_len": 2048,
+      "fp16_ms": 0.451,
+      "fp32_ms": 0.27,
+      "fp32_fp16_ratio": 0.6,
+      "fp16_mem_mb": 40.26,
+      "fp32_mem_mb": 32.26,
+      "diagnosis": "COMPUTE-BOUND"
+    }
+  ],
+  "model_analysis": [
+    {
+      "backend": "math",
+      "cache_len": 256,
+      "fp16_decode_ms": 32.793,
+      "fp32_decode_ms": 67.041,
+      "decode_ratio": 2.04,
+      "decode_diagnosis": "MEMORY-BOUND",
+      "fp16_prefill_s": 0.0299,
+      "fp32_prefill_s": 0.0568,
+      "prefill_ratio": 1.9,
+      "prefill_diagnosis": "MEMORY-BOUND",
+      "fp16_mem_mb": 681.0,
+      "fp32_mem_mb": 1342.62,
+      "mem_ratio": 1.97
+    },
+    {
+      "backend": "math",
+      "cache_len": 512,
+      "fp16_decode_ms": 78.677,
+      "fp32_decode_ms": 133.019,
+      "decode_ratio": 1.69,
+      "decode_diagnosis": "MEMORY-BOUND",
+      "fp16_prefill_s": 0.0677,
+      "fp32_prefill_s": 0.1231,
+      "prefill_ratio": 1.82,
+      "prefill_diagnosis": "MEMORY-BOUND",
+      "fp16_mem_mb": 738.77,
+      "fp32_mem_mb": 1415.57,
+      "mem_ratio": 1.92
+    },
+    {
+      "backend": "math",
+      "cache_len": 1024,
+      "fp16_decode_ms": 214.155,
+      "fp32_decode_ms": 314.32,
+      "decode_ratio": 1.47,
+      "decode_diagnosis": "MIXED",
+      "fp16_prefill_s": 0.2066,
+      "fp32_prefill_s": 0.3017,
+      "prefill_ratio": 1.46,
+      "prefill_diagnosis": "MIXED",
+      "fp16_mem_mb": 909.8,
+      "fp32_mem_mb": 1632.6,
+      "mem_ratio": 1.79
+    },
+    {
+      "backend": "math",
+      "cache_len": 1800,
+      "fp16_decode_ms": 563.089,
+      "fp32_decode_ms": 703.96,
+      "decode_ratio": 1.25,
+      "decode_diagnosis": "MIXED",
+      "fp16_prefill_s": 0.5596,
+      "fp32_prefill_s": 0.7006,
+      "prefill_ratio": 1.25,
+      "prefill_diagnosis": "MIXED",
+      "fp16_mem_mb": 1311.06,
+      "fp32_mem_mb": 2104.53,
+      "mem_ratio": 1.61
+    }
+  ]
+}
