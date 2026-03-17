@@ -1,0 +1,123 @@
+{
+  "kernel": [
+    {
+      "backend": "mem_efficient",
+      "kv_len": 128,
+      "fp16_ms": 0.051,
+      "fp32_ms": 0.091,
+      "ratio": 1.78,
+      "diagnosis": "MEMORY-BOUND"
+    },
+    {
+      "backend": "math",
+      "kv_len": 128,
+      "fp16_ms": 0.129,
+      "fp32_ms": 0.095,
+      "ratio": 0.74,
+      "diagnosis": "COMPUTE-BOUND"
+    },
+    {
+      "backend": "mem_efficient",
+      "kv_len": 256,
+      "fp16_ms": 0.077,
+      "fp32_ms": 0.15,
+      "ratio": 1.95,
+      "diagnosis": "MEMORY-BOUND"
+    },
+    {
+      "backend": "math",
+      "kv_len": 256,
+      "fp16_ms": 0.184,
+      "fp32_ms": 0.141,
+      "ratio": 0.77,
+      "diagnosis": "COMPUTE-BOUND"
+    },
+    {
+      "backend": "mem_efficient",
+      "kv_len": 512,
+      "fp16_ms": 0.357,
+      "fp32_ms": 0.274,
+      "ratio": 0.77,
+      "diagnosis": "COMPUTE-BOUND"
+    },
+    {
+      "backend": "math",
+      "kv_len": 512,
+      "fp16_ms": 0.306,
+      "fp32_ms": 0.24,
+      "ratio": 0.78,
+      "diagnosis": "COMPUTE-BOUND"
+    },
+    {
+      "backend": "mem_efficient",
+      "kv_len": 1024,
+      "fp16_ms": 0.197,
+      "fp32_ms": 0.525,
+      "ratio": 2.66,
+      "diagnosis": "MEMORY-BOUND"
+    },
+    {
+      "backend": "math",
+      "kv_len": 1024,
+      "fp16_ms": 0.547,
+      "fp32_ms": 0.452,
+      "ratio": 0.83,
+      "diagnosis": "COMPUTE-BOUND"
+    },
+    {
+      "backend": "mem_efficient",
+      "kv_len": 1536,
+      "fp16_ms": 0.278,
+      "fp32_ms": 0.821,
+      "ratio": 2.95,
+      "diagnosis": "MEMORY-BOUND"
+    },
+    {
+      "backend": "math",
+      "kv_len": 1536,
+      "fp16_ms": 0.802,
+      "fp32_ms": 0.72,
+      "ratio": 0.9,
+      "diagnosis": "COMPUTE-BOUND"
+    },
+    {
+      "backend": "mem_efficient",
+      "kv_len": 2048,
+      "fp16_ms": 0.361,
+      "fp32_ms": 1.098,
+      "ratio": 3.04,
+      "diagnosis": "MEMORY-BOUND"
+    },
+    {
+      "backend": "math",
+      "kv_len": 2048,
+      "fp16_ms": 1.224,
+      "fp32_ms": 0.941,
+      "ratio": 0.77,
+      "diagnosis": "COMPUTE-BOUND"
+    }
+  ],
+  "model": [
+    {
+      "cache_len": 512,
+      "fp16_ms": 135.354,
+      "fp32_ms": 220.497,
+      "ratio": 1.63,
+      "diagnosis": "MEMORY-BOUND"
+    },
+    {
+      "cache_len": 1024,
+      "fp16_ms": 356.887,
+      "fp32_ms": 502.864,
+      "ratio": 1.41,
+      "diagnosis": "COMPUTE-BOUND"
+    },
+    {
+      "cache_len": 1800,
+      "fp16_ms": 842.239,
+      "fp32_ms": 1075.867,
+      "ratio": 1.28,
+      "diagnosis": "COMPUTE-BOUND"
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "6": [
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.051,
+      "std_latency_ms": 0.012,
+      "median_peak_memory_mb": 1.51,
+      "num_runs": 3,
+      "kv_len": 128,
+      "dtype": "fp16"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.129,
+      "std_latency_ms": 0.155,
+      "median_peak_memory_mb": 12.65,
+      "num_runs": 3,
+      "kv_len": 128,
+      "dtype": "fp16"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.091,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 11.14,
+      "num_runs": 3,
+      "kv_len": 128,
+      "dtype": "fp32"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.095,
+      "std_latency_ms": 0.009,
+      "median_peak_memory_mb": 12.15,
+      "num_runs": 3,
+      "kv_len": 128,
+      "dtype": "fp32"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.077,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 11.13,
+      "num_runs": 3,
+      "kv_len": 256,
+      "dtype": "fp16"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.184,
+      "std_latency_ms": 0.004,
+      "median_peak_memory_mb": 17.16,
+      "num_runs": 3,
+      "kv_len": 256,
+      "dtype": "fp16"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.15,
+      "std_latency_ms": 0.011,
+      "median_peak_memory_mb": 14.14,
+      "num_runs": 3,
+      "kv_len": 256,
+      "dtype": "fp32"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.141,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 16.16,
+      "num_runs": 3,
+      "kv_len": 256,
+      "dtype": "fp32"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.357,
+      "std_latency_ms": 0.072,
+      "median_peak_memory_mb": 14.13,
+      "num_runs": 3,
+      "kv_len": 512,
+      "dtype": "fp16"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.306,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 26.18,
+      "num_runs": 3,
+      "kv_len": 512,
+      "dtype": "fp16"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.274,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 20.14,
+      "num_runs": 3,
+      "kv_len": 512,
+      "dtype": "fp32"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.24,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 24.17,
+      "num_runs": 3,
+      "kv_len": 512,
+      "dtype": "fp32"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.197,
+      "std_latency_ms": 0.008,
+      "median_peak_memory_mb": 20.13,
+      "num_runs": 3,
+      "kv_len": 1024,
+      "dtype": "fp16"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.547,
+      "std_latency_ms": 0.015,
+      "median_peak_memory_mb": 44.21,
+      "num_runs": 3,
+      "kv_len": 1024,
+      "dtype": "fp16"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.525,
+      "std_latency_ms": 0.116,
+      "median_peak_memory_mb": 32.14,
+      "num_runs": 3,
+      "kv_len": 1024,
+      "dtype": "fp32"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.452,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 40.2,
+      "num_runs": 3,
+      "kv_len": 1024,
+      "dtype": "fp32"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.278,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 26.13,
+      "num_runs": 3,
+      "kv_len": 1536,
+      "dtype": "fp16"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.802,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 62.24,
+      "num_runs": 3,
+      "kv_len": 1536,
+      "dtype": "fp16"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.821,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 44.14,
+      "num_runs": 3,
+      "kv_len": 1536,
+      "dtype": "fp32"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.72,
+      "std_latency_ms": 0.108,
+      "median_peak_memory_mb": 56.23,
+      "num_runs": 3,
+      "kv_len": 1536,
+      "dtype": "fp32"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.361,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 32.13,
+      "num_runs": 3,
+      "kv_len": 2048,
+      "dtype": "fp16"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 1.224,
+      "std_latency_ms": 0.208,
+      "median_peak_memory_mb": 80.27,
+      "num_runs": 3,
+      "kv_len": 2048,
+      "dtype": "fp16"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 1.098,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 56.14,
+      "num_runs": 3,
+      "kv_len": 2048,
+      "dtype": "fp32"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.941,
+      "std_latency_ms": 0.167,
+      "median_peak_memory_mb": 72.27,
+      "num_runs": 3,
+      "kv_len": 2048,
+      "dtype": "fp32"
+    },
+    {
+      "dtype": "fp16",
+      "cache_len": 512,
+      "median_per_token_decode_ms": 135.354
+    },
+    {
+      "dtype": "fp16",
+      "cache_len": 1024,
+      "median_per_token_decode_ms": 356.887
+    },
+    {
+      "dtype": "fp16",
+      "cache_len": 1800,
+      "median_per_token_decode_ms": 842.239
+    },
+    {
+      "dtype": "fp32",
+      "cache_len": 512,
+      "median_per_token_decode_ms": 220.497
+    },
+    {
+      "dtype": "fp32",
+      "cache_len": 1024,
+      "median_per_token_decode_ms": 502.864
+    },
+    {
+      "dtype": "fp32",
+      "cache_len": 1800,
+      "median_per_token_decode_ms": 1075.867
+    }
+  ]
+}
