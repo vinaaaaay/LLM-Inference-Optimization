@@ -1,0 +1,3909 @@
+{
+  "gpu_info": {
+    "gpu_name": "NVIDIA GeForce RTX 3050",
+    "gpu_vram_mb": 5795,
+    "cuda_version": "12.8",
+    "pytorch_version": "2.10.0+cu128",
+    "compute_capability": "8.6"
+  },
+  "exp1_prefill": [
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.039,
+      "std_latency_ms": 0.006,
+      "median_peak_memory_mb": 1.01,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0484,
+        0.0451,
+        0.0359,
+        0.0389,
+        0.036
+      ],
+      "all_peak_memories": [
+        1.0087890625,
+        1.0087890625,
+        1.0087890625,
+        1.0087890625,
+        1.0087890625
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "seq_len": 256,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.04,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 1.0,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0448,
+        0.0423,
+        0.0396,
+        0.0376,
+        0.0366
+      ],
+      "all_peak_memories": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "seq_len": 256,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.297,
+      "std_latency_ms": 0.01,
+      "median_peak_memory_mb": 15.63,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.3171,
+        0.3026,
+        0.2966,
+        0.2933,
+        0.2929
+      ],
+      "all_peak_memories": [
+        15.62744140625,
+        15.62744140625,
+        15.62744140625,
+        15.62744140625,
+        15.62744140625
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "seq_len": 256,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.07,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 10.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0704,
+        0.074,
+        0.0695,
+        0.0682,
+        0.0669
+      ],
+      "all_peak_memories": [
+        10.1416015625,
+        10.1416015625,
+        10.1416015625,
+        10.1416015625,
+        10.1416015625
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "seq_len": 512,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.074,
+      "std_latency_ms": 0.004,
+      "median_peak_memory_mb": 10.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.071,
+        0.0737,
+        0.0741,
+        0.0791,
+        0.0818
+      ],
+      "all_peak_memories": [
+        10.125,
+        10.125,
+        10.125,
+        10.125,
+        10.125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "seq_len": 512,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.946,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 32.63,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.9468,
+        0.9467,
+        0.9435,
+        0.9457,
+        0.9442
+      ],
+      "all_peak_memories": [
+        32.62939453125,
+        32.62939453125,
+        32.62939453125,
+        32.62939453125,
+        32.62939453125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "seq_len": 512,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.169,
+      "std_latency_ms": 0.009,
+      "median_peak_memory_mb": 12.16,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1539,
+        0.1758,
+        0.1752,
+        0.169,
+        0.1674
+      ],
+      "all_peak_memories": [
+        12.1572265625,
+        12.1572265625,
+        12.1572265625,
+        12.1572265625,
+        12.1572265625
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "seq_len": 1024,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.178,
+      "std_latency_ms": 0.006,
+      "median_peak_memory_mb": 12.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1769,
+        0.1912,
+        0.1854,
+        0.1785,
+        0.1764
+      ],
+      "all_peak_memories": [
+        12.125,
+        12.125,
+        12.125,
+        12.125,
+        12.125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "seq_len": 1024,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 3.365,
+      "std_latency_ms": 0.006,
+      "median_peak_memory_mb": 95.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        3.3745,
+        3.363,
+        3.3581,
+        3.365,
+        3.3693
+      ],
+      "all_peak_memories": [
+        95.13330078125,
+        95.13330078125,
+        95.13330078125,
+        95.13330078125,
+        95.13330078125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "seq_len": 1024,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.486,
+      "std_latency_ms": 0.016,
+      "median_peak_memory_mb": 16.19,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.4855,
+        0.4713,
+        0.5094,
+        0.4986,
+        0.4761
+      ],
+      "all_peak_memories": [
+        16.1884765625,
+        16.1884765625,
+        16.1884765625,
+        16.1884765625,
+        16.1884765625
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "seq_len": 2048,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.54,
+      "std_latency_ms": 0.017,
+      "median_peak_memory_mb": 16.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.555,
+        0.5691,
+        0.5254,
+        0.5395,
+        0.5366
+      ],
+      "all_peak_memories": [
+        16.125,
+        16.125,
+        16.125,
+        16.125,
+        16.125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "seq_len": 2048,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 12.975,
+      "std_latency_ms": 0.114,
+      "median_peak_memory_mb": 334.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        12.9677,
+        12.9728,
+        12.9841,
+        12.9746,
+        13.2296
+      ],
+      "all_peak_memories": [
+        334.14111328125,
+        334.14111328125,
+        334.14111328125,
+        334.14111328125,
+        334.14111328125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "seq_len": 2048,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.059,
+      "std_latency_ms": 0.007,
+      "median_peak_memory_mb": 10.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.06,
+        0.0729,
+        0.0593,
+        0.0574,
+        0.0556
+      ],
+      "all_peak_memories": [
+        10.1416015625,
+        10.1416015625,
+        10.1416015625,
+        10.1416015625,
+        10.1416015625
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "seq_len": 256,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.051,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 10.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0565,
+        0.0512,
+        0.0503,
+        0.05,
+        0.0523
+      ],
+      "all_peak_memories": [
+        10.125,
+        10.125,
+        10.125,
+        10.125,
+        10.125
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "seq_len": 256,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.524,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 22.88,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.5271,
+        0.5217,
+        0.525,
+        0.5234,
+        0.5237
+      ],
+      "all_peak_memories": [
+        22.87939453125,
+        22.87939453125,
+        22.87939453125,
+        22.87939453125,
+        22.87939453125
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "seq_len": 256,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.108,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 12.16,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1117,
+        0.109,
+        0.1063,
+        0.1082,
+        0.1045
+      ],
+      "all_peak_memories": [
+        12.1572265625,
+        12.1572265625,
+        12.1572265625,
+        12.1572265625,
+        12.1572265625
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "seq_len": 512,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.106,
+      "std_latency_ms": 0.005,
+      "median_peak_memory_mb": 12.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1026,
+        0.1155,
+        0.1058,
+        0.1025,
+        0.1062
+      ],
+      "all_peak_memories": [
+        12.125,
+        12.125,
+        12.125,
+        12.125,
+        12.125
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "seq_len": 512,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 1.789,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 56.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        1.7885,
+        1.7861,
+        1.7901,
+        1.7849,
+        1.789
+      ],
+      "all_peak_memories": [
+        56.13330078125,
+        56.13330078125,
+        56.13330078125,
+        56.13330078125,
+        56.13330078125
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "seq_len": 512,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.275,
+      "std_latency_ms": 0.009,
+      "median_peak_memory_mb": 16.19,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.2628,
+        0.275,
+        0.2835,
+        0.2768,
+        0.2642
+      ],
+      "all_peak_memories": [
+        16.1884765625,
+        16.1884765625,
+        16.1884765625,
+        16.1884765625,
+        16.1884765625
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "seq_len": 1024,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.285,
+      "std_latency_ms": 0.013,
+      "median_peak_memory_mb": 16.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.3106,
+        0.3036,
+        0.2824,
+        0.2851,
+        0.2827
+      ],
+      "all_peak_memories": [
+        16.125,
+        16.125,
+        16.125,
+        16.125,
+        16.125
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "seq_len": 1024,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 6.553,
+      "std_latency_ms": 0.006,
+      "median_peak_memory_mb": 178.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        6.5525,
+        6.5545,
+        6.5566,
+        6.5419,
+        6.5494
+      ],
+      "all_peak_memories": [
+        178.14111328125,
+        178.14111328125,
+        178.14111328125,
+        178.14111328125,
+        178.14111328125
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "seq_len": 1024,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.857,
+      "std_latency_ms": 0.016,
+      "median_peak_memory_mb": 24.25,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.864,
+        0.8368,
+        0.8569,
+        0.8312,
+        0.8655
+      ],
+      "all_peak_memories": [
+        24.2509765625,
+        24.2509765625,
+        24.2509765625,
+        24.2509765625,
+        24.2509765625
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "seq_len": 2048,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.959,
+      "std_latency_ms": 0.024,
+      "median_peak_memory_mb": 24.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.9592,
+        0.937,
+        0.9742,
+        0.9562,
+        1.002
+      ],
+      "all_peak_memories": [
+        24.125,
+        24.125,
+        24.125,
+        24.125,
+        24.125
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "seq_len": 2048,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 24.497,
+      "std_latency_ms": 0.024,
+      "median_peak_memory_mb": 644.16,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        24.4764,
+        24.447,
+        24.5032,
+        24.4967,
+        24.5022
+      ],
+      "all_peak_memories": [
+        644.15673828125,
+        644.15673828125,
+        644.15673828125,
+        644.15673828125,
+        644.15673828125
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "seq_len": 2048,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.075,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 12.16,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0748,
+        0.0727,
+        0.0771,
+        0.0729,
+        0.0788
+      ],
+      "all_peak_memories": [
+        12.1572265625,
+        12.1572265625,
+        12.1572265625,
+        12.1572265625,
+        12.1572265625
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "seq_len": 256,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.066,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 12.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0671,
+        0.0682,
+        0.0646,
+        0.0657,
+        0.0655
+      ],
+      "all_peak_memories": [
+        12.125,
+        12.125,
+        12.125,
+        12.125,
+        12.125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "seq_len": 256,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.918,
+      "std_latency_ms": 0.091,
+      "median_peak_memory_mb": 37.38,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        1.1256,
+        0.954,
+        0.9181,
+        0.9107,
+        0.9178
+      ],
+      "all_peak_memories": [
+        37.38330078125,
+        37.38330078125,
+        37.38330078125,
+        37.38330078125,
+        37.38330078125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "seq_len": 256,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.141,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 16.19,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1405,
+        0.1385,
+        0.1417,
+        0.1364,
+        0.1427
+      ],
+      "all_peak_memories": [
+        16.1884765625,
+        16.1884765625,
+        16.1884765625,
+        16.1884765625,
+        16.1884765625
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "seq_len": 512,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.131,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 16.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1313,
+        0.1257,
+        0.1277,
+        0.1325,
+        0.1309
+      ],
+      "all_peak_memories": [
+        16.125,
+        16.125,
+        16.125,
+        16.125,
+        16.125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "seq_len": 512,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 3.337,
+      "std_latency_ms": 0.004,
+      "median_peak_memory_mb": 103.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        3.3381,
+        3.3316,
+        3.3405,
+        3.3341,
+        3.3374
+      ],
+      "all_peak_memories": [
+        103.14111328125,
+        103.14111328125,
+        103.14111328125,
+        103.14111328125,
+        103.14111328125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "seq_len": 512,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.368,
+      "std_latency_ms": 0.008,
+      "median_peak_memory_mb": 24.25,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.3678,
+        0.3559,
+        0.3716,
+        0.3565,
+        0.3728
+      ],
+      "all_peak_memories": [
+        24.2509765625,
+        24.2509765625,
+        24.2509765625,
+        24.2509765625,
+        24.2509765625
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "seq_len": 1024,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.416,
+      "std_latency_ms": 0.005,
+      "median_peak_memory_mb": 24.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.4126,
+        0.4139,
+        0.418,
+        0.4242,
+        0.4163
+      ],
+      "all_peak_memories": [
+        24.125,
+        24.125,
+        24.125,
+        24.125,
+        24.125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "seq_len": 1024,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 12.4,
+      "std_latency_ms": 0.013,
+      "median_peak_memory_mb": 344.16,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        12.4223,
+        12.4203,
+        12.3969,
+        12.3944,
+        12.3995
+      ],
+      "all_peak_memories": [
+        344.15673828125,
+        344.15673828125,
+        344.15673828125,
+        344.15673828125,
+        344.15673828125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "seq_len": 1024,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 1.224,
+      "std_latency_ms": 0.014,
+      "median_peak_memory_mb": 40.38,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        1.254,
+        1.224,
+        1.2232,
+        1.2338,
+        1.2203
+      ],
+      "all_peak_memories": [
+        40.3759765625,
+        40.3759765625,
+        40.3759765625,
+        40.3759765625,
+        40.3759765625
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "seq_len": 2048,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 1.486,
+      "std_latency_ms": 0.013,
+      "median_peak_memory_mb": 40.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        1.4859,
+        1.509,
+        1.4846,
+        1.5078,
+        1.4834
+      ],
+      "all_peak_memories": [
+        40.125,
+        40.125,
+        40.125,
+        40.125,
+        40.125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "seq_len": 2048,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 48.47,
+      "std_latency_ms": 0.049,
+      "median_peak_memory_mb": 1264.19,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        48.426,
+        48.4699,
+        48.5592,
+        48.4694,
+        48.4728
+      ],
+      "all_peak_memories": [
+        1264.18798828125,
+        1264.18798828125,
+        1264.18798828125,
+        1264.18798828125,
+        1264.18798828125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "seq_len": 2048,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.077,
+      "std_latency_ms": 0.005,
+      "median_peak_memory_mb": 12.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0813,
+        0.0769,
+        0.0774,
+        0.0744,
+        0.0883
+      ],
+      "all_peak_memories": [
+        12.1416015625,
+        12.1416015625,
+        12.1416015625,
+        12.1416015625,
+        12.1416015625
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "seq_len": 256,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.073,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 12.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0717,
+        0.0726,
+        0.072,
+        0.0768,
+        0.0745
+      ],
+      "all_peak_memories": [
+        12.125,
+        12.125,
+        12.125,
+        12.125,
+        12.125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "seq_len": 256,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.71,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 28.38,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.712,
+        0.7113,
+        0.7075,
+        0.7099,
+        0.7079
+      ],
+      "all_peak_memories": [
+        28.37939453125,
+        28.37939453125,
+        28.37939453125,
+        28.37939453125,
+        28.37939453125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "seq_len": 256,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.185,
+      "std_latency_ms": 0.004,
+      "median_peak_memory_mb": 16.16,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1915,
+        0.1874,
+        0.1848,
+        0.1849,
+        0.1818
+      ],
+      "all_peak_memories": [
+        16.1572265625,
+        16.1572265625,
+        16.1572265625,
+        16.1572265625,
+        16.1572265625
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "seq_len": 512,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.171,
+      "std_latency_ms": 0.0,
+      "median_peak_memory_mb": 16.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1702,
+        0.1712,
+        0.1709,
+        0.1706,
+        0.1701
+      ],
+      "all_peak_memories": [
+        16.125,
+        16.125,
+        16.125,
+        16.125,
+        16.125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "seq_len": 512,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 1.957,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 67.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        1.9527,
+        1.9578,
+        1.9606,
+        1.955,
+        1.9569
+      ],
+      "all_peak_memories": [
+        67.13330078125,
+        67.13330078125,
+        67.13330078125,
+        67.13330078125,
+        67.13330078125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "seq_len": 512,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.351,
+      "std_latency_ms": 0.004,
+      "median_peak_memory_mb": 24.19,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.3554,
+        0.3554,
+        0.3486,
+        0.3515,
+        0.3467
+      ],
+      "all_peak_memories": [
+        24.1884765625,
+        24.1884765625,
+        24.1884765625,
+        24.1884765625,
+        24.1884765625
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "seq_len": 1024,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.512,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 24.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.5116,
+        0.5122,
+        0.5185,
+        0.5108,
+        0.5109
+      ],
+      "all_peak_memories": [
+        24.125,
+        24.125,
+        24.125,
+        24.125,
+        24.125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "seq_len": 1024,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 7.047,
+      "std_latency_ms": 0.011,
+      "median_peak_memory_mb": 200.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        7.0474,
+        7.0479,
+        7.0364,
+        7.0446,
+        7.066
+      ],
+      "all_peak_memories": [
+        200.14111328125,
+        200.14111328125,
+        200.14111328125,
+        200.14111328125,
+        200.14111328125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "seq_len": 1024,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 1.221,
+      "std_latency_ms": 0.012,
+      "median_peak_memory_mb": 40.25,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        1.2213,
+        1.2263,
+        1.223,
+        1.2188,
+        1.1951
+      ],
+      "all_peak_memories": [
+        40.2509765625,
+        40.2509765625,
+        40.2509765625,
+        40.2509765625,
+        40.2509765625
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "seq_len": 2048,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 1.84,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 40.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        1.8462,
+        1.8409,
+        1.8404,
+        1.8398,
+        1.839
+      ],
+      "all_peak_memories": [
+        40.125,
+        40.125,
+        40.125,
+        40.125,
+        40.125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "seq_len": 2048,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 26.619,
+      "std_latency_ms": 0.008,
+      "median_peak_memory_mb": 688.16,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        26.6128,
+        26.6241,
+        26.6305,
+        26.6128,
+        26.6189
+      ],
+      "all_peak_memories": [
+        688.15673828125,
+        688.15673828125,
+        688.15673828125,
+        688.15673828125,
+        688.15673828125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "seq_len": 2048,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.13,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 16.16,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1326,
+        0.1306,
+        0.13,
+        0.1287,
+        0.1268
+      ],
+      "all_peak_memories": [
+        16.1572265625,
+        16.1572265625,
+        16.1572265625,
+        16.1572265625,
+        16.1572265625
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "seq_len": 256,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.119,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 16.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1215,
+        0.1194,
+        0.1185,
+        0.1181,
+        0.1178
+      ],
+      "all_peak_memories": [
+        16.125,
+        16.125,
+        16.125,
+        16.125,
+        16.125
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "seq_len": 256,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 1.136,
+      "std_latency_ms": 0.132,
+      "median_peak_memory_mb": 48.38,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        1.3834,
+        1.3631,
+        1.1361,
+        1.1335,
+        1.1308
+      ],
+      "all_peak_memories": [
+        48.38330078125,
+        48.38330078125,
+        48.38330078125,
+        48.38330078125,
+        48.38330078125
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "seq_len": 256,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.223,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 24.19,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.2237,
+        0.2264,
+        0.2218,
+        0.2232,
+        0.223
+      ],
+      "all_peak_memories": [
+        24.1884765625,
+        24.1884765625,
+        24.1884765625,
+        24.1884765625,
+        24.1884765625
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "seq_len": 512,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.307,
+      "std_latency_ms": 0.005,
+      "median_peak_memory_mb": 24.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.3185,
+        0.3133,
+        0.3072,
+        0.3063,
+        0.3073
+      ],
+      "all_peak_memories": [
+        24.125,
+        24.125,
+        24.125,
+        24.125,
+        24.125
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "seq_len": 512,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 3.842,
+      "std_latency_ms": 0.005,
+      "median_peak_memory_mb": 125.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        3.8418,
+        3.8348,
+        3.8375,
+        3.8465,
+        3.8426
+      ],
+      "all_peak_memories": [
+        125.14111328125,
+        125.14111328125,
+        125.14111328125,
+        125.14111328125,
+        125.14111328125
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "seq_len": 512,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.656,
+      "std_latency_ms": 0.004,
+      "median_peak_memory_mb": 40.25,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.6487,
+        0.6569,
+        0.6564,
+        0.6548,
+        0.6569
+      ],
+      "all_peak_memories": [
+        40.2509765625,
+        40.2509765625,
+        40.2509765625,
+        40.2509765625,
+        40.2509765625
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "seq_len": 1024,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.997,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 40.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.998,
+        0.9975,
+        0.9967,
+        0.9969,
+        0.9959
+      ],
+      "all_peak_memories": [
+        40.125,
+        40.125,
+        40.125,
+        40.125,
+        40.125
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "seq_len": 1024,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 13.881,
+      "std_latency_ms": 0.015,
+      "median_peak_memory_mb": 388.16,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        13.8815,
+        13.8521,
+        13.8831,
+        13.886,
+        13.8648
+      ],
+      "all_peak_memories": [
+        388.15673828125,
+        388.15673828125,
+        388.15673828125,
+        388.15673828125,
+        388.15673828125
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "seq_len": 1024,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 2.366,
+      "std_latency_ms": 0.011,
+      "median_peak_memory_mb": 72.38,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        2.3664,
+        2.3576,
+        2.3774,
+        2.3522,
+        2.3754
+      ],
+      "all_peak_memories": [
+        72.3759765625,
+        72.3759765625,
+        72.3759765625,
+        72.3759765625,
+        72.3759765625
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "seq_len": 2048,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 3.667,
+      "std_latency_ms": 0.009,
+      "median_peak_memory_mb": 72.12,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        3.67,
+        3.6848,
+        3.6666,
+        3.6667,
+        3.6622
+      ],
+      "all_peak_memories": [
+        72.125,
+        72.125,
+        72.125,
+        72.125,
+        72.125
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "seq_len": 2048,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 52.699,
+      "std_latency_ms": 0.014,
+      "median_peak_memory_mb": 1352.19,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        52.6987,
+        52.6863,
+        52.6763,
+        52.7057,
+        52.7113
+      ],
+      "all_peak_memories": [
+        1352.18798828125,
+        1352.18798828125,
+        1352.18798828125,
+        1352.18798828125,
+        1352.18798828125
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "seq_len": 2048,
+      "config": "H32_D128"
+    }
+  ],
+  "exp2_decode": [
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.03,
+      "std_latency_ms": 0.004,
+      "median_peak_memory_mb": 8.63,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.04,
+        0.0337,
+        0.0299,
+        0.0299,
+        0.03
+      ],
+      "all_peak_memories": [
+        8.62841796875,
+        8.62841796875,
+        8.62841796875,
+        8.62841796875,
+        8.62841796875
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "kv_len": 256,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.029,
+      "std_latency_ms": 0.004,
+      "median_peak_memory_mb": 8.63,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0382,
+        0.0291,
+        0.0287,
+        0.0285,
+        0.0282
+      ],
+      "all_peak_memories": [
+        8.626953125,
+        8.626953125,
+        8.626953125,
+        8.626953125,
+        8.626953125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "kv_len": 256,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.086,
+      "std_latency_ms": 0.005,
+      "median_peak_memory_mb": 10.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0877,
+        0.0925,
+        0.0862,
+        0.0818,
+        0.0811
+      ],
+      "all_peak_memories": [
+        10.1376953125,
+        10.1376953125,
+        10.1376953125,
+        10.1376953125,
+        10.1376953125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "kv_len": 256,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.032,
+      "std_latency_ms": 0.004,
+      "median_peak_memory_mb": 9.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0364,
+        0.0387,
+        0.0316,
+        0.0309,
+        0.0306
+      ],
+      "all_peak_memories": [
+        9.1328125,
+        9.1328125,
+        9.1328125,
+        9.1328125,
+        9.1328125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "kv_len": 512,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.041,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 9.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.041,
+        0.0417,
+        0.0406,
+        0.0401,
+        0.0389
+      ],
+      "all_peak_memories": [
+        9.126953125,
+        9.126953125,
+        9.126953125,
+        9.126953125,
+        9.126953125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "kv_len": 512,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.1,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 12.15,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1021,
+        0.1027,
+        0.0987,
+        0.0999,
+        0.0994
+      ],
+      "all_peak_memories": [
+        12.1455078125,
+        12.1455078125,
+        12.1455078125,
+        12.1455078125,
+        12.1455078125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "kv_len": 512,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.045,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 10.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0468,
+        0.0456,
+        0.045,
+        0.0441,
+        0.0429
+      ],
+      "all_peak_memories": [
+        10.13671875,
+        10.13671875,
+        10.13671875,
+        10.13671875,
+        10.13671875
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "kv_len": 1024,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.068,
+      "std_latency_ms": 0.029,
+      "median_peak_memory_mb": 10.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0673,
+        0.1343,
+        0.0704,
+        0.0685,
+        0.0674
+      ],
+      "all_peak_memories": [
+        10.126953125,
+        10.126953125,
+        10.126953125,
+        10.126953125,
+        10.126953125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "kv_len": 1024,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.141,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 16.16,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1408,
+        0.1434,
+        0.1416,
+        0.1398,
+        0.1393
+      ],
+      "all_peak_memories": [
+        16.1611328125,
+        16.1611328125,
+        16.1611328125,
+        16.1611328125,
+        16.1611328125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "kv_len": 1024,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.057,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 12.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0572,
+        0.0592,
+        0.0585,
+        0.0572,
+        0.0568
+      ],
+      "all_peak_memories": [
+        12.13671875,
+        12.13671875,
+        12.13671875,
+        12.13671875,
+        12.13671875
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "kv_len": 2048,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.113,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 12.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1137,
+        0.1131,
+        0.1139,
+        0.1122,
+        0.112
+      ],
+      "all_peak_memories": [
+        12.126953125,
+        12.126953125,
+        12.126953125,
+        12.126953125,
+        12.126953125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "kv_len": 2048,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.241,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 24.19,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.2418,
+        0.2437,
+        0.2409,
+        0.2412,
+        0.2404
+      ],
+      "all_peak_memories": [
+        24.1923828125,
+        24.1923828125,
+        24.1923828125,
+        24.1923828125,
+        24.1923828125
+      ],
+      "num_heads": 8,
+      "head_dim": 64,
+      "kv_len": 2048,
+      "config": "H8_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.031,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 9.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0301,
+        0.0312,
+        0.0296,
+        0.0349,
+        0.032
+      ],
+      "all_peak_memories": [
+        9.13037109375,
+        9.13037109375,
+        9.13037109375,
+        9.13037109375,
+        9.13037109375
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "kv_len": 256,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.029,
+      "std_latency_ms": 0.0,
+      "median_peak_memory_mb": 9.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0293,
+        0.029,
+        0.0282,
+        0.0291,
+        0.0284
+      ],
+      "all_peak_memories": [
+        9.12890625,
+        9.12890625,
+        9.12890625,
+        9.12890625,
+        9.12890625
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "kv_len": 256,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.089,
+      "std_latency_ms": 0.011,
+      "median_peak_memory_mb": 12.15,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0888,
+        0.0886,
+        0.0868,
+        0.086,
+        0.1119
+      ],
+      "all_peak_memories": [
+        12.150390625,
+        12.150390625,
+        12.150390625,
+        12.150390625,
+        12.150390625
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "kv_len": 256,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.045,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 10.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0453,
+        0.0459,
+        0.0451,
+        0.045,
+        0.0433
+      ],
+      "all_peak_memories": [
+        10.138671875,
+        10.138671875,
+        10.138671875,
+        10.138671875,
+        10.138671875
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "kv_len": 512,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.044,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 10.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0444,
+        0.0437,
+        0.0433,
+        0.0426,
+        0.0439
+      ],
+      "all_peak_memories": [
+        10.12890625,
+        10.12890625,
+        10.12890625,
+        10.12890625,
+        10.12890625
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "kv_len": 512,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.139,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 16.17,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1386,
+        0.1401,
+        0.1386,
+        0.1377,
+        0.1385
+      ],
+      "all_peak_memories": [
+        16.166015625,
+        16.166015625,
+        16.166015625,
+        16.166015625,
+        16.166015625
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "kv_len": 512,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.057,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 12.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0572,
+        0.0598,
+        0.058,
+        0.0568,
+        0.0566
+      ],
+      "all_peak_memories": [
+        12.138671875,
+        12.138671875,
+        12.138671875,
+        12.138671875,
+        12.138671875
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "kv_len": 1024,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.067,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 12.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0663,
+        0.0683,
+        0.0672,
+        0.0667,
+        0.0669
+      ],
+      "all_peak_memories": [
+        12.12890625,
+        12.12890625,
+        12.12890625,
+        12.12890625,
+        12.12890625
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "kv_len": 1024,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.237,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 24.2,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.2391,
+        0.2428,
+        0.2371,
+        0.2371,
+        0.2367
+      ],
+      "all_peak_memories": [
+        24.197265625,
+        24.197265625,
+        24.197265625,
+        24.197265625,
+        24.197265625
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "kv_len": 1024,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.084,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 16.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0842,
+        0.0859,
+        0.0841,
+        0.0818,
+        0.0823
+      ],
+      "all_peak_memories": [
+        16.138671875,
+        16.138671875,
+        16.138671875,
+        16.138671875,
+        16.138671875
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "kv_len": 2048,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.115,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 16.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1142,
+        0.115,
+        0.1148,
+        0.1161,
+        0.1143
+      ],
+      "all_peak_memories": [
+        16.12890625,
+        16.12890625,
+        16.12890625,
+        16.12890625,
+        16.12890625
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "kv_len": 2048,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.437,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 40.26,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.4379,
+        0.44,
+        0.4372,
+        0.4375,
+        0.4353
+      ],
+      "all_peak_memories": [
+        40.259765625,
+        40.259765625,
+        40.259765625,
+        40.259765625,
+        40.259765625
+      ],
+      "num_heads": 16,
+      "head_dim": 64,
+      "kv_len": 2048,
+      "config": "H16_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.045,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 10.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0443,
+        0.0446,
+        0.0501,
+        0.0463,
+        0.0442
+      ],
+      "all_peak_memories": [
+        10.13427734375,
+        10.13427734375,
+        10.13427734375,
+        10.13427734375,
+        10.13427734375
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "kv_len": 256,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.035,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 10.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0354,
+        0.0365,
+        0.0355,
+        0.0354,
+        0.0352
+      ],
+      "all_peak_memories": [
+        10.1328125,
+        10.1328125,
+        10.1328125,
+        10.1328125,
+        10.1328125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "kv_len": 256,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.138,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 16.18,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1383,
+        0.1383,
+        0.1384,
+        0.1375,
+        0.1356
+      ],
+      "all_peak_memories": [
+        16.17578125,
+        16.17578125,
+        16.17578125,
+        16.17578125,
+        16.17578125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "kv_len": 256,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.064,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 12.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0641,
+        0.0665,
+        0.0642,
+        0.0649,
+        0.0635
+      ],
+      "all_peak_memories": [
+        12.13427734375,
+        12.13427734375,
+        12.13427734375,
+        12.13427734375,
+        12.13427734375
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "kv_len": 512,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.05,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 12.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0501,
+        0.0495,
+        0.0499,
+        0.0492,
+        0.0542
+      ],
+      "all_peak_memories": [
+        12.1328125,
+        12.1328125,
+        12.1328125,
+        12.1328125,
+        12.1328125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "kv_len": 512,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.235,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 24.21,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.2375,
+        0.2357,
+        0.2354,
+        0.2346,
+        0.2338
+      ],
+      "all_peak_memories": [
+        24.20703125,
+        24.20703125,
+        24.20703125,
+        24.20703125,
+        24.20703125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "kv_len": 512,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.103,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 16.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1047,
+        0.1039,
+        0.1033,
+        0.1019,
+        0.1014
+      ],
+      "all_peak_memories": [
+        16.13427734375,
+        16.13427734375,
+        16.13427734375,
+        16.13427734375,
+        16.13427734375
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "kv_len": 1024,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.079,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 16.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0793,
+        0.0821,
+        0.0811,
+        0.0784,
+        0.0788
+      ],
+      "all_peak_memories": [
+        16.1328125,
+        16.1328125,
+        16.1328125,
+        16.1328125,
+        16.1328125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "kv_len": 1024,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.433,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 40.27,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.434,
+        0.4328,
+        0.4315,
+        0.4316,
+        0.4332
+      ],
+      "all_peak_memories": [
+        40.26953125,
+        40.26953125,
+        40.26953125,
+        40.26953125,
+        40.26953125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "kv_len": 1024,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.182,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 24.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1827,
+        0.1824,
+        0.1803,
+        0.1818,
+        0.181
+      ],
+      "all_peak_memories": [
+        24.13427734375,
+        24.13427734375,
+        24.13427734375,
+        24.13427734375,
+        24.13427734375
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "kv_len": 2048,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.137,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 24.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1364,
+        0.1384,
+        0.138,
+        0.136,
+        0.1371
+      ],
+      "all_peak_memories": [
+        24.1328125,
+        24.1328125,
+        24.1328125,
+        24.1328125,
+        24.1328125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "kv_len": 2048,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.822,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 72.39,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.8268,
+        0.8258,
+        0.8214,
+        0.8214,
+        0.8222
+      ],
+      "all_peak_memories": [
+        72.39453125,
+        72.39453125,
+        72.39453125,
+        72.39453125,
+        72.39453125
+      ],
+      "num_heads": 32,
+      "head_dim": 64,
+      "kv_len": 2048,
+      "config": "H32_D64"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.044,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 10.15,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0497,
+        0.0471,
+        0.0442,
+        0.0442,
+        0.0434
+      ],
+      "all_peak_memories": [
+        10.150390625,
+        10.150390625,
+        10.150390625,
+        10.150390625,
+        10.150390625
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "kv_len": 256,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.037,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 10.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0368,
+        0.0414,
+        0.0376,
+        0.0368,
+        0.0364
+      ],
+      "all_peak_memories": [
+        10.1328125,
+        10.1328125,
+        10.1328125,
+        10.1328125,
+        10.1328125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "kv_len": 256,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.137,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 16.16,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1369,
+        0.1365,
+        0.1367,
+        0.1348,
+        0.1357
+      ],
+      "all_peak_memories": [
+        16.16015625,
+        16.16015625,
+        16.16015625,
+        16.16015625,
+        16.16015625
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "kv_len": 256,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.057,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 12.15,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0569,
+        0.0588,
+        0.0565,
+        0.056,
+        0.0567
+      ],
+      "all_peak_memories": [
+        12.150390625,
+        12.150390625,
+        12.150390625,
+        12.150390625,
+        12.150390625
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "kv_len": 512,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.052,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 12.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.052,
+        0.0529,
+        0.0518,
+        0.0514,
+        0.0516
+      ],
+      "all_peak_memories": [
+        12.1328125,
+        12.1328125,
+        12.1328125,
+        12.1328125,
+        12.1328125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "kv_len": 512,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.235,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 24.18,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.2351,
+        0.2346,
+        0.2375,
+        0.2338,
+        0.2335
+      ],
+      "all_peak_memories": [
+        24.17578125,
+        24.17578125,
+        24.17578125,
+        24.17578125,
+        24.17578125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "kv_len": 512,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.084,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 16.15,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.09,
+        0.0848,
+        0.0836,
+        0.0831,
+        0.0833
+      ],
+      "all_peak_memories": [
+        16.150390625,
+        16.150390625,
+        16.150390625,
+        16.150390625,
+        16.150390625
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "kv_len": 1024,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.082,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 16.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0817,
+        0.0823,
+        0.0852,
+        0.0817,
+        0.0802
+      ],
+      "all_peak_memories": [
+        16.1328125,
+        16.1328125,
+        16.1328125,
+        16.1328125,
+        16.1328125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "kv_len": 1024,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.431,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 40.21,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.4322,
+        0.4321,
+        0.4307,
+        0.4294,
+        0.4313
+      ],
+      "all_peak_memories": [
+        40.20703125,
+        40.20703125,
+        40.20703125,
+        40.20703125,
+        40.20703125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "kv_len": 1024,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.139,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 24.15,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1393,
+        0.1392,
+        0.1392,
+        0.1419,
+        0.138
+      ],
+      "all_peak_memories": [
+        24.150390625,
+        24.150390625,
+        24.150390625,
+        24.150390625,
+        24.150390625
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "kv_len": 2048,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.139,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 24.13,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1385,
+        0.1416,
+        0.1399,
+        0.1378,
+        0.1385
+      ],
+      "all_peak_memories": [
+        24.1328125,
+        24.1328125,
+        24.1328125,
+        24.1328125,
+        24.1328125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "kv_len": 2048,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.831,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 72.27,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.8331,
+        0.8291,
+        0.8317,
+        0.8315,
+        0.8266
+      ],
+      "all_peak_memories": [
+        72.26953125,
+        72.26953125,
+        72.26953125,
+        72.26953125,
+        72.26953125
+      ],
+      "num_heads": 16,
+      "head_dim": 128,
+      "kv_len": 2048,
+      "config": "H16_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.06,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 12.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0609,
+        0.0607,
+        0.0599,
+        0.0596,
+        0.0593
+      ],
+      "all_peak_memories": [
+        12.14208984375,
+        12.14208984375,
+        12.14208984375,
+        12.14208984375,
+        12.14208984375
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "kv_len": 256,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.053,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 12.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0526,
+        0.0531,
+        0.0522,
+        0.0528,
+        0.0579
+      ],
+      "all_peak_memories": [
+        12.140625,
+        12.140625,
+        12.140625,
+        12.140625,
+        12.140625
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "kv_len": 256,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.235,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 24.2,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.2362,
+        0.2362,
+        0.2346,
+        0.233,
+        0.2337
+      ],
+      "all_peak_memories": [
+        24.1953125,
+        24.1953125,
+        24.1953125,
+        24.1953125,
+        24.1953125
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "kv_len": 256,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.097,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 16.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0983,
+        0.0977,
+        0.097,
+        0.0962,
+        0.0956
+      ],
+      "all_peak_memories": [
+        16.14208984375,
+        16.14208984375,
+        16.14208984375,
+        16.14208984375,
+        16.14208984375
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "kv_len": 512,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.081,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 16.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.0809,
+        0.0821,
+        0.0811,
+        0.0812,
+        0.0806
+      ],
+      "all_peak_memories": [
+        16.140625,
+        16.140625,
+        16.140625,
+        16.140625,
+        16.140625
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "kv_len": 512,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.429,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 40.23,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.4308,
+        0.4292,
+        0.4322,
+        0.4286,
+        0.428
+      ],
+      "all_peak_memories": [
+        40.2265625,
+        40.2265625,
+        40.2265625,
+        40.2265625,
+        40.2265625
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "kv_len": 512,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.173,
+      "std_latency_ms": 0.003,
+      "median_peak_memory_mb": 24.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.174,
+        0.178,
+        0.1727,
+        0.1719,
+        0.1717
+      ],
+      "all_peak_memories": [
+        24.14208984375,
+        24.14208984375,
+        24.14208984375,
+        24.14208984375,
+        24.14208984375
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "kv_len": 1024,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.14,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 24.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.1413,
+        0.14,
+        0.1396,
+        0.14,
+        0.1413
+      ],
+      "all_peak_memories": [
+        24.140625,
+        24.140625,
+        24.140625,
+        24.140625,
+        24.140625
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "kv_len": 1024,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 0.817,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 72.29,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.8178,
+        0.8185,
+        0.8166,
+        0.8162,
+        0.8142
+      ],
+      "all_peak_memories": [
+        72.2890625,
+        72.2890625,
+        72.2890625,
+        72.2890625,
+        72.2890625
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "kv_len": 1024,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "flash",
+      "median_latency_ms": 0.322,
+      "std_latency_ms": 0.001,
+      "median_peak_memory_mb": 40.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.3223,
+        0.3223,
+        0.3204,
+        0.3209,
+        0.3217
+      ],
+      "all_peak_memories": [
+        40.14208984375,
+        40.14208984375,
+        40.14208984375,
+        40.14208984375,
+        40.14208984375
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "kv_len": 2048,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "mem_efficient",
+      "median_latency_ms": 0.257,
+      "std_latency_ms": 0.004,
+      "median_peak_memory_mb": 40.14,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        0.2561,
+        0.2568,
+        0.2665,
+        0.2589,
+        0.2562
+      ],
+      "all_peak_memories": [
+        40.140625,
+        40.140625,
+        40.140625,
+        40.140625,
+        40.140625
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "kv_len": 2048,
+      "config": "H32_D128"
+    },
+    {
+      "backend": "math",
+      "median_latency_ms": 1.601,
+      "std_latency_ms": 0.002,
+      "median_peak_memory_mb": 136.41,
+      "num_runs": 5,
+      "all_latencies_ms": [
+        1.6055,
+        1.6052,
+        1.6005,
+        1.6014,
+        1.6009
+      ],
+      "all_peak_memories": [
+        136.4140625,
+        136.4140625,
+        136.4140625,
+        136.4140625,
+        136.4140625
+      ],
+      "num_heads": 32,
+      "head_dim": 128,
+      "kv_len": 2048,
+      "config": "H32_D128"
+    }
+  ],
+  "exp3_combined": [
+    {
+      "backend": "flash",
+      "num_heads": 8,
+      "head_dim": 64,
+      "context_size": 256,
+      "config": "H8_D64",
+      "prefill_latency_ms": 0.029,
+      "decode_latency_ms": 0.03,
+      "combined_latency_ms": 0.059,
+      "prefill_memory_mb": 9.63,
+      "decode_memory_mb": 9.38,
+      "peak_memory_mb": 9.63
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 8,
+      "head_dim": 64,
+      "context_size": 256,
+      "config": "H8_D64",
+      "prefill_latency_ms": 0.032,
+      "decode_latency_ms": 0.028,
+      "combined_latency_ms": 0.06,
+      "prefill_memory_mb": 9.63,
+      "decode_memory_mb": 9.38,
+      "peak_memory_mb": 9.63
+    },
+    {
+      "backend": "math",
+      "num_heads": 8,
+      "head_dim": 64,
+      "context_size": 256,
+      "config": "H8_D64",
+      "prefill_latency_ms": 0.267,
+      "decode_latency_ms": 0.079,
+      "combined_latency_ms": 0.346,
+      "prefill_memory_mb": 16.13,
+      "decode_memory_mb": 10.89,
+      "peak_memory_mb": 16.13
+    },
+    {
+      "backend": "flash",
+      "num_heads": 8,
+      "head_dim": 64,
+      "context_size": 512,
+      "config": "H8_D64",
+      "prefill_latency_ms": 0.06,
+      "decode_latency_ms": 0.031,
+      "combined_latency_ms": 0.091,
+      "prefill_memory_mb": 11.14,
+      "decode_memory_mb": 10.63,
+      "peak_memory_mb": 11.14
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 8,
+      "head_dim": 64,
+      "context_size": 512,
+      "config": "H8_D64",
+      "prefill_latency_ms": 0.059,
+      "decode_latency_ms": 0.039,
+      "combined_latency_ms": 0.098,
+      "prefill_memory_mb": 11.13,
+      "decode_memory_mb": 10.63,
+      "peak_memory_mb": 11.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 8,
+      "head_dim": 64,
+      "context_size": 512,
+      "config": "H8_D64",
+      "prefill_latency_ms": 0.879,
+      "decode_latency_ms": 0.088,
+      "combined_latency_ms": 0.967,
+      "prefill_memory_mb": 33.63,
+      "decode_memory_mb": 13.65,
+      "peak_memory_mb": 33.63
+    },
+    {
+      "backend": "flash",
+      "num_heads": 8,
+      "head_dim": 64,
+      "context_size": 1024,
+      "config": "H8_D64",
+      "prefill_latency_ms": 0.135,
+      "decode_latency_ms": 0.044,
+      "combined_latency_ms": 0.179,
+      "prefill_memory_mb": 14.16,
+      "decode_memory_mb": 13.14,
+      "peak_memory_mb": 14.16
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 8,
+      "head_dim": 64,
+      "context_size": 1024,
+      "config": "H8_D64",
+      "prefill_latency_ms": 0.14,
+      "decode_latency_ms": 0.066,
+      "combined_latency_ms": 0.206,
+      "prefill_memory_mb": 14.13,
+      "decode_memory_mb": 13.13,
+      "peak_memory_mb": 14.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 8,
+      "head_dim": 64,
+      "context_size": 1024,
+      "config": "H8_D64",
+      "prefill_latency_ms": 3.214,
+      "decode_latency_ms": 0.139,
+      "combined_latency_ms": 3.353,
+      "prefill_memory_mb": 97.13,
+      "decode_memory_mb": 19.16,
+      "peak_memory_mb": 97.13
+    },
+    {
+      "backend": "flash",
+      "num_heads": 8,
+      "head_dim": 64,
+      "context_size": 2048,
+      "config": "H8_D64",
+      "prefill_latency_ms": 0.366,
+      "decode_latency_ms": 0.057,
+      "combined_latency_ms": 0.423,
+      "prefill_memory_mb": 20.19,
+      "decode_memory_mb": 18.14,
+      "peak_memory_mb": 20.19
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 8,
+      "head_dim": 64,
+      "context_size": 2048,
+      "config": "H8_D64",
+      "prefill_latency_ms": 0.431,
+      "decode_latency_ms": 0.112,
+      "combined_latency_ms": 0.543,
+      "prefill_memory_mb": 20.13,
+      "decode_memory_mb": 18.13,
+      "peak_memory_mb": 20.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 8,
+      "head_dim": 64,
+      "context_size": 2048,
+      "config": "H8_D64",
+      "prefill_latency_ms": 12.511,
+      "decode_latency_ms": 0.243,
+      "combined_latency_ms": 12.754,
+      "prefill_memory_mb": 338.14,
+      "decode_memory_mb": 30.19,
+      "peak_memory_mb": 338.14
+    },
+    {
+      "backend": "flash",
+      "num_heads": 16,
+      "head_dim": 64,
+      "context_size": 256,
+      "config": "H16_D64",
+      "prefill_latency_ms": 0.05,
+      "decode_latency_ms": 0.03,
+      "combined_latency_ms": 0.08,
+      "prefill_memory_mb": 11.14,
+      "decode_memory_mb": 10.63,
+      "peak_memory_mb": 11.14
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 16,
+      "head_dim": 64,
+      "context_size": 256,
+      "config": "H16_D64",
+      "prefill_latency_ms": 0.042,
+      "decode_latency_ms": 0.028,
+      "combined_latency_ms": 0.07,
+      "prefill_memory_mb": 11.13,
+      "decode_memory_mb": 10.63,
+      "peak_memory_mb": 11.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 16,
+      "head_dim": 64,
+      "context_size": 256,
+      "config": "H16_D64",
+      "prefill_latency_ms": 0.486,
+      "decode_latency_ms": 0.086,
+      "combined_latency_ms": 0.572,
+      "prefill_memory_mb": 23.88,
+      "decode_memory_mb": 13.65,
+      "peak_memory_mb": 23.88
+    },
+    {
+      "backend": "flash",
+      "num_heads": 16,
+      "head_dim": 64,
+      "context_size": 512,
+      "config": "H16_D64",
+      "prefill_latency_ms": 0.088,
+      "decode_latency_ms": 0.044,
+      "combined_latency_ms": 0.132,
+      "prefill_memory_mb": 14.16,
+      "decode_memory_mb": 13.14,
+      "peak_memory_mb": 14.16
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 16,
+      "head_dim": 64,
+      "context_size": 512,
+      "config": "H16_D64",
+      "prefill_latency_ms": 0.084,
+      "decode_latency_ms": 0.043,
+      "combined_latency_ms": 0.127,
+      "prefill_memory_mb": 14.13,
+      "decode_memory_mb": 13.13,
+      "peak_memory_mb": 14.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 16,
+      "head_dim": 64,
+      "context_size": 512,
+      "config": "H16_D64",
+      "prefill_latency_ms": 1.69,
+      "decode_latency_ms": 0.137,
+      "combined_latency_ms": 1.827,
+      "prefill_memory_mb": 58.14,
+      "decode_memory_mb": 19.17,
+      "peak_memory_mb": 58.14
+    },
+    {
+      "backend": "flash",
+      "num_heads": 16,
+      "head_dim": 64,
+      "context_size": 1024,
+      "config": "H16_D64",
+      "prefill_latency_ms": 0.21,
+      "decode_latency_ms": 0.057,
+      "combined_latency_ms": 0.267,
+      "prefill_memory_mb": 20.19,
+      "decode_memory_mb": 18.14,
+      "peak_memory_mb": 20.19
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 16,
+      "head_dim": 64,
+      "context_size": 1024,
+      "config": "H16_D64",
+      "prefill_latency_ms": 0.229,
+      "decode_latency_ms": 0.068,
+      "combined_latency_ms": 0.297,
+      "prefill_memory_mb": 20.13,
+      "decode_memory_mb": 18.13,
+      "peak_memory_mb": 20.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 16,
+      "head_dim": 64,
+      "context_size": 1024,
+      "config": "H16_D64",
+      "prefill_latency_ms": 6.307,
+      "decode_latency_ms": 0.239,
+      "combined_latency_ms": 6.546,
+      "prefill_memory_mb": 182.14,
+      "decode_memory_mb": 30.2,
+      "peak_memory_mb": 182.14
+    },
+    {
+      "backend": "flash",
+      "num_heads": 16,
+      "head_dim": 64,
+      "context_size": 2048,
+      "config": "H16_D64",
+      "prefill_latency_ms": 0.659,
+      "decode_latency_ms": 0.084,
+      "combined_latency_ms": 0.743,
+      "prefill_memory_mb": 32.25,
+      "decode_memory_mb": 28.14,
+      "peak_memory_mb": 32.25
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 16,
+      "head_dim": 64,
+      "context_size": 2048,
+      "config": "H16_D64",
+      "prefill_latency_ms": 0.791,
+      "decode_latency_ms": 0.116,
+      "combined_latency_ms": 0.907,
+      "prefill_memory_mb": 32.13,
+      "decode_memory_mb": 28.13,
+      "peak_memory_mb": 32.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 16,
+      "head_dim": 64,
+      "context_size": 2048,
+      "config": "H16_D64",
+      "prefill_latency_ms": 24.483,
+      "decode_latency_ms": 0.439,
+      "combined_latency_ms": 24.922,
+      "prefill_memory_mb": 652.16,
+      "decode_memory_mb": 52.26,
+      "peak_memory_mb": 652.16
+    },
+    {
+      "backend": "flash",
+      "num_heads": 32,
+      "head_dim": 64,
+      "context_size": 256,
+      "config": "H32_D64",
+      "prefill_latency_ms": 0.075,
+      "decode_latency_ms": 0.049,
+      "combined_latency_ms": 0.124,
+      "prefill_memory_mb": 14.16,
+      "decode_memory_mb": 13.13,
+      "peak_memory_mb": 14.16
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 32,
+      "head_dim": 64,
+      "context_size": 256,
+      "config": "H32_D64",
+      "prefill_latency_ms": 0.067,
+      "decode_latency_ms": 0.037,
+      "combined_latency_ms": 0.104,
+      "prefill_memory_mb": 14.13,
+      "decode_memory_mb": 13.13,
+      "peak_memory_mb": 14.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 32,
+      "head_dim": 64,
+      "context_size": 256,
+      "config": "H32_D64",
+      "prefill_latency_ms": 0.914,
+      "decode_latency_ms": 0.137,
+      "combined_latency_ms": 1.051,
+      "prefill_memory_mb": 39.39,
+      "decode_memory_mb": 19.18,
+      "peak_memory_mb": 39.39
+    },
+    {
+      "backend": "flash",
+      "num_heads": 32,
+      "head_dim": 64,
+      "context_size": 512,
+      "config": "H32_D64",
+      "prefill_latency_ms": 0.137,
+      "decode_latency_ms": 0.064,
+      "combined_latency_ms": 0.201,
+      "prefill_memory_mb": 20.19,
+      "decode_memory_mb": 18.13,
+      "peak_memory_mb": 20.19
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 32,
+      "head_dim": 64,
+      "context_size": 512,
+      "config": "H32_D64",
+      "prefill_latency_ms": 0.131,
+      "decode_latency_ms": 0.05,
+      "combined_latency_ms": 0.181,
+      "prefill_memory_mb": 20.13,
+      "decode_memory_mb": 18.13,
+      "peak_memory_mb": 20.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 32,
+      "head_dim": 64,
+      "context_size": 512,
+      "config": "H32_D64",
+      "prefill_latency_ms": 3.337,
+      "decode_latency_ms": 0.235,
+      "combined_latency_ms": 3.572,
+      "prefill_memory_mb": 107.15,
+      "decode_memory_mb": 30.21,
+      "peak_memory_mb": 107.15
+    },
+    {
+      "backend": "flash",
+      "num_heads": 32,
+      "head_dim": 64,
+      "context_size": 1024,
+      "config": "H32_D64",
+      "prefill_latency_ms": 0.369,
+      "decode_latency_ms": 0.103,
+      "combined_latency_ms": 0.472,
+      "prefill_memory_mb": 32.25,
+      "decode_memory_mb": 28.13,
+      "peak_memory_mb": 32.25
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 32,
+      "head_dim": 64,
+      "context_size": 1024,
+      "config": "H32_D64",
+      "prefill_latency_ms": 0.418,
+      "decode_latency_ms": 0.078,
+      "combined_latency_ms": 0.496,
+      "prefill_memory_mb": 32.13,
+      "decode_memory_mb": 28.13,
+      "peak_memory_mb": 32.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 32,
+      "head_dim": 64,
+      "context_size": 1024,
+      "config": "H32_D64",
+      "prefill_latency_ms": 12.402,
+      "decode_latency_ms": 0.434,
+      "combined_latency_ms": 12.836,
+      "prefill_memory_mb": 352.16,
+      "decode_memory_mb": 52.27,
+      "peak_memory_mb": 352.16
+    },
+    {
+      "backend": "flash",
+      "num_heads": 32,
+      "head_dim": 64,
+      "context_size": 2048,
+      "config": "H32_D64",
+      "prefill_latency_ms": 1.246,
+      "decode_latency_ms": 0.184,
+      "combined_latency_ms": 1.43,
+      "prefill_memory_mb": 56.38,
+      "decode_memory_mb": 48.13,
+      "peak_memory_mb": 56.38
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 32,
+      "head_dim": 64,
+      "context_size": 2048,
+      "config": "H32_D64",
+      "prefill_latency_ms": 1.496,
+      "decode_latency_ms": 0.14,
+      "combined_latency_ms": 1.636,
+      "prefill_memory_mb": 56.13,
+      "decode_memory_mb": 48.13,
+      "peak_memory_mb": 56.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 32,
+      "head_dim": 64,
+      "context_size": 2048,
+      "config": "H32_D64",
+      "prefill_latency_ms": 48.485,
+      "decode_latency_ms": 0.825,
+      "combined_latency_ms": 49.31,
+      "prefill_memory_mb": 1280.19,
+      "decode_memory_mb": 96.39,
+      "peak_memory_mb": 1280.19
+    },
+    {
+      "backend": "flash",
+      "num_heads": 16,
+      "head_dim": 128,
+      "context_size": 256,
+      "config": "H16_D128",
+      "prefill_latency_ms": 0.075,
+      "decode_latency_ms": 0.047,
+      "combined_latency_ms": 0.122,
+      "prefill_memory_mb": 14.15,
+      "decode_memory_mb": 13.15,
+      "peak_memory_mb": 14.15
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 16,
+      "head_dim": 128,
+      "context_size": 256,
+      "config": "H16_D128",
+      "prefill_latency_ms": 0.072,
+      "decode_latency_ms": 0.041,
+      "combined_latency_ms": 0.113,
+      "prefill_memory_mb": 14.13,
+      "decode_memory_mb": 13.13,
+      "peak_memory_mb": 14.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 16,
+      "head_dim": 128,
+      "context_size": 256,
+      "config": "H16_D128",
+      "prefill_latency_ms": 0.707,
+      "decode_latency_ms": 0.162,
+      "combined_latency_ms": 0.869,
+      "prefill_memory_mb": 30.38,
+      "decode_memory_mb": 19.16,
+      "peak_memory_mb": 30.38
+    },
+    {
+      "backend": "flash",
+      "num_heads": 16,
+      "head_dim": 128,
+      "context_size": 512,
+      "config": "H16_D128",
+      "prefill_latency_ms": 0.133,
+      "decode_latency_ms": 0.057,
+      "combined_latency_ms": 0.19,
+      "prefill_memory_mb": 20.16,
+      "decode_memory_mb": 18.15,
+      "peak_memory_mb": 20.16
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 16,
+      "head_dim": 128,
+      "context_size": 512,
+      "config": "H16_D128",
+      "prefill_latency_ms": 0.171,
+      "decode_latency_ms": 0.052,
+      "combined_latency_ms": 0.223,
+      "prefill_memory_mb": 20.13,
+      "decode_memory_mb": 18.13,
+      "peak_memory_mb": 20.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 16,
+      "head_dim": 128,
+      "context_size": 512,
+      "config": "H16_D128",
+      "prefill_latency_ms": 1.957,
+      "decode_latency_ms": 0.235,
+      "combined_latency_ms": 2.192,
+      "prefill_memory_mb": 71.14,
+      "decode_memory_mb": 30.18,
+      "peak_memory_mb": 71.14
+    },
+    {
+      "backend": "flash",
+      "num_heads": 16,
+      "head_dim": 128,
+      "context_size": 1024,
+      "config": "H16_D128",
+      "prefill_latency_ms": 0.348,
+      "decode_latency_ms": 0.083,
+      "combined_latency_ms": 0.431,
+      "prefill_memory_mb": 32.19,
+      "decode_memory_mb": 28.15,
+      "peak_memory_mb": 32.19
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 16,
+      "head_dim": 128,
+      "context_size": 1024,
+      "config": "H16_D128",
+      "prefill_latency_ms": 0.509,
+      "decode_latency_ms": 0.083,
+      "combined_latency_ms": 0.592,
+      "prefill_memory_mb": 32.13,
+      "decode_memory_mb": 28.13,
+      "peak_memory_mb": 32.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 16,
+      "head_dim": 128,
+      "context_size": 1024,
+      "config": "H16_D128",
+      "prefill_latency_ms": 7.039,
+      "decode_latency_ms": 0.43,
+      "combined_latency_ms": 7.469,
+      "prefill_memory_mb": 208.15,
+      "decode_memory_mb": 52.21,
+      "peak_memory_mb": 208.15
+    },
+    {
+      "backend": "flash",
+      "num_heads": 16,
+      "head_dim": 128,
+      "context_size": 2048,
+      "config": "H16_D128",
+      "prefill_latency_ms": 1.218,
+      "decode_latency_ms": 0.137,
+      "combined_latency_ms": 1.355,
+      "prefill_memory_mb": 56.25,
+      "decode_memory_mb": 48.15,
+      "peak_memory_mb": 56.25
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 16,
+      "head_dim": 128,
+      "context_size": 2048,
+      "config": "H16_D128",
+      "prefill_latency_ms": 1.847,
+      "decode_latency_ms": 0.14,
+      "combined_latency_ms": 1.987,
+      "prefill_memory_mb": 56.13,
+      "decode_memory_mb": 48.13,
+      "peak_memory_mb": 56.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 16,
+      "head_dim": 128,
+      "context_size": 2048,
+      "config": "H16_D128",
+      "prefill_latency_ms": 26.635,
+      "decode_latency_ms": 0.834,
+      "combined_latency_ms": 27.469,
+      "prefill_memory_mb": 704.16,
+      "decode_memory_mb": 96.27,
+      "peak_memory_mb": 704.16
+    },
+    {
+      "backend": "flash",
+      "num_heads": 32,
+      "head_dim": 128,
+      "context_size": 256,
+      "config": "H32_D128",
+      "prefill_latency_ms": 0.133,
+      "decode_latency_ms": 0.063,
+      "combined_latency_ms": 0.196,
+      "prefill_memory_mb": 20.17,
+      "decode_memory_mb": 18.14,
+      "peak_memory_mb": 20.17
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 32,
+      "head_dim": 128,
+      "context_size": 256,
+      "config": "H32_D128",
+      "prefill_latency_ms": 0.119,
+      "decode_latency_ms": 0.06,
+      "combined_latency_ms": 0.179,
+      "prefill_memory_mb": 20.13,
+      "decode_memory_mb": 18.14,
+      "peak_memory_mb": 20.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 32,
+      "head_dim": 128,
+      "context_size": 256,
+      "config": "H32_D128",
+      "prefill_latency_ms": 1.135,
+      "decode_latency_ms": 0.237,
+      "combined_latency_ms": 1.372,
+      "prefill_memory_mb": 52.39,
+      "decode_memory_mb": 30.2,
+      "peak_memory_mb": 52.39
+    },
+    {
+      "backend": "flash",
+      "num_heads": 32,
+      "head_dim": 128,
+      "context_size": 512,
+      "config": "H32_D128",
+      "prefill_latency_ms": 0.219,
+      "decode_latency_ms": 0.099,
+      "combined_latency_ms": 0.318,
+      "prefill_memory_mb": 32.2,
+      "decode_memory_mb": 28.14,
+      "peak_memory_mb": 32.2
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 32,
+      "head_dim": 128,
+      "context_size": 512,
+      "config": "H32_D128",
+      "prefill_latency_ms": 0.308,
+      "decode_latency_ms": 0.083,
+      "combined_latency_ms": 0.391,
+      "prefill_memory_mb": 32.13,
+      "decode_memory_mb": 28.14,
+      "peak_memory_mb": 32.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 32,
+      "head_dim": 128,
+      "context_size": 512,
+      "config": "H32_D128",
+      "prefill_latency_ms": 3.847,
+      "decode_latency_ms": 0.428,
+      "combined_latency_ms": 4.275,
+      "prefill_memory_mb": 133.15,
+      "decode_memory_mb": 52.23,
+      "peak_memory_mb": 133.15
+    },
+    {
+      "backend": "flash",
+      "num_heads": 32,
+      "head_dim": 128,
+      "context_size": 1024,
+      "config": "H32_D128",
+      "prefill_latency_ms": 0.648,
+      "decode_latency_ms": 0.173,
+      "combined_latency_ms": 0.821,
+      "prefill_memory_mb": 56.26,
+      "decode_memory_mb": 48.14,
+      "peak_memory_mb": 56.26
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 32,
+      "head_dim": 128,
+      "context_size": 1024,
+      "config": "H32_D128",
+      "prefill_latency_ms": 0.986,
+      "decode_latency_ms": 0.142,
+      "combined_latency_ms": 1.128,
+      "prefill_memory_mb": 56.13,
+      "decode_memory_mb": 48.14,
+      "peak_memory_mb": 56.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 32,
+      "head_dim": 128,
+      "context_size": 1024,
+      "config": "H32_D128",
+      "prefill_latency_ms": 13.872,
+      "decode_latency_ms": 0.818,
+      "combined_latency_ms": 14.69,
+      "prefill_memory_mb": 404.16,
+      "decode_memory_mb": 96.29,
+      "peak_memory_mb": 404.16
+    },
+    {
+      "backend": "flash",
+      "num_heads": 32,
+      "head_dim": 128,
+      "context_size": 2048,
+      "config": "H32_D128",
+      "prefill_latency_ms": 2.358,
+      "decode_latency_ms": 0.325,
+      "combined_latency_ms": 2.683,
+      "prefill_memory_mb": 104.38,
+      "decode_memory_mb": 88.14,
+      "peak_memory_mb": 104.38
+    },
+    {
+      "backend": "mem_efficient",
+      "num_heads": 32,
+      "head_dim": 128,
+      "context_size": 2048,
+      "config": "H32_D128",
+      "prefill_latency_ms": 3.577,
+      "decode_latency_ms": 0.271,
+      "combined_latency_ms": 3.848,
+      "prefill_memory_mb": 104.13,
+      "decode_memory_mb": 88.14,
+      "peak_memory_mb": 104.13
+    },
+    {
+      "backend": "math",
+      "num_heads": 32,
+      "head_dim": 128,
+      "context_size": 2048,
+      "config": "H32_D128",
+      "prefill_latency_ms": 52.743,
+      "decode_latency_ms": 1.607,
+      "combined_latency_ms": 54.35,
+      "prefill_memory_mb": 1384.2,
+      "decode_memory_mb": 184.41,
+      "peak_memory_mb": 1384.2
+    }
+  ],
+  "exp4_e2e": [
+    {
+      "backend": "flash",
+      "seq_len": 256,
+      "max_new_tokens": 64,
+      "median_latency_s": 0.8122,
+      "std_latency_s": 0.003,
+      "median_ttft_s": 0.0347,
+      "decode_time_s": 0.7774,
+      "tokens_per_sec": 78.8,
+      "decode_tok_per_sec": 82.32,
+      "median_peak_memory_mb": 1478.13,
+      "prefill_pct": 4.3,
+      "decode_pct": 95.7
+    },
+    {
+      "backend": "math",
+      "seq_len": 256,
+      "max_new_tokens": 64,
+      "median_latency_s": 1.0757,
+      "std_latency_s": 0.0012,
+      "median_ttft_s": 0.0506,
+      "decode_time_s": 1.0251,
+      "tokens_per_sec": 59.5,
+      "decode_tok_per_sec": 62.44,
+      "median_peak_memory_mb": 1491.66,
+      "prefill_pct": 4.7,
+      "decode_pct": 95.3
+    },
+    {
+      "backend": "flash",
+      "seq_len": 512,
+      "max_new_tokens": 64,
+      "median_latency_s": 0.882,
+      "std_latency_s": 0.0443,
+      "median_ttft_s": 0.0693,
+      "decode_time_s": 0.8127,
+      "tokens_per_sec": 72.56,
+      "decode_tok_per_sec": 78.75,
+      "median_peak_memory_mb": 1529.85,
+      "prefill_pct": 7.9,
+      "decode_pct": 92.1
+    },
+    {
+      "backend": "math",
+      "seq_len": 512,
+      "max_new_tokens": 64,
+      "median_latency_s": 1.3862,
+      "std_latency_s": 0.0015,
+      "median_ttft_s": 0.1233,
+      "decode_time_s": 1.2629,
+      "tokens_per_sec": 46.17,
+      "decode_tok_per_sec": 50.68,
+      "median_peak_memory_mb": 1560.04,
+      "prefill_pct": 8.9,
+      "decode_pct": 91.1
+    },
+    {
+      "backend": "flash",
+      "seq_len": 1024,
+      "max_new_tokens": 64,
+      "median_latency_s": 1.0322,
+      "std_latency_s": 0.002,
+      "median_ttft_s": 0.1404,
+      "decode_time_s": 0.8918,
+      "tokens_per_sec": 62.01,
+      "decode_tok_per_sec": 71.77,
+      "median_peak_memory_mb": 1580.31,
+      "prefill_pct": 13.6,
+      "decode_pct": 86.4
+    },
+    {
+      "backend": "math",
+      "seq_len": 1024,
+      "max_new_tokens": 64,
+      "median_latency_s": 2.0933,
+      "std_latency_s": 0.0009,
+      "median_ttft_s": 0.3342,
+      "decode_time_s": 1.7592,
+      "tokens_per_sec": 30.57,
+      "decode_tok_per_sec": 36.38,
+      "median_peak_memory_mb": 1752.32,
+      "prefill_pct": 16.0,
+      "decode_pct": 84.0
+    },
+    {
+      "backend": "flash",
+      "seq_len": 1800,
+      "max_new_tokens": 64,
+      "median_latency_s": 1.2512,
+      "std_latency_s": 0.0028,
+      "median_ttft_s": 0.2504,
+      "decode_time_s": 1.0008,
+      "tokens_per_sec": 51.15,
+      "decode_tok_per_sec": 63.95,
+      "median_peak_memory_mb": 1686.98,
+      "prefill_pct": 20.0,
+      "decode_pct": 80.0
+    },
+    {
+      "backend": "math",
+      "seq_len": 1800,
+      "max_new_tokens": 64,
+      "median_latency_s": 3.4431,
+      "std_latency_s": 0.0019,
+      "median_ttft_s": 0.8277,
+      "decode_time_s": 2.6154,
+      "tokens_per_sec": 18.59,
+      "decode_tok_per_sec": 24.47,
+      "median_peak_memory_mb": 2187.06,
+      "prefill_pct": 24.0,
+      "decode_pct": 76.0
+    }
+  ]
+}
