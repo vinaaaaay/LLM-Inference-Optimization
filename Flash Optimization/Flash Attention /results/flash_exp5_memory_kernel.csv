@@ -1,0 +1,11 @@
+backend,seq_len,level,median_latency_ms,median_peak_memory_mb,num_runs
+flash,256,kernel,0.058,11.14,5
+math,256,kernel,0.625,29.38,5
+flash,512,kernel,0.126,14.16,5
+math,512,kernel,2.022,69.13,5
+flash,1024,kernel,0.352,20.19,5
+math,1024,kernel,7.202,204.14,5
+flash,1536,kernel,0.719,26.22,5
+math,1536,kernel,15.465,413.9,5
+flash,2048,kernel,1.238,32.25,5
+math,2048,kernel,27.058,696.16,5
