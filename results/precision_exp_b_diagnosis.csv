@@ -1,5 +1,0 @@
-backend,cache_len,fp16_decode_ms,fp32_decode_ms,decode_ratio,decode_diagnosis,fp16_prefill_s,fp32_prefill_s,prefill_ratio,prefill_diagnosis,fp16_mem_mb,fp32_mem_mb,mem_ratio
-math,256,32.793,67.041,2.04,MEMORY-BOUND,0.0299,0.0568,1.9,MEMORY-BOUND,681.0,1342.62,1.97
-math,512,78.677,133.019,1.69,MEMORY-BOUND,0.0677,0.1231,1.82,MEMORY-BOUND,738.77,1415.57,1.92
-math,1024,214.155,314.32,1.47,MIXED,0.2066,0.3017,1.46,MIXED,909.8,1632.6,1.79
-math,1800,563.089,703.96,1.25,MIXED,0.5596,0.7006,1.25,MIXED,1311.06,2104.53,1.61
