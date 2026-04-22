@@ -1,0 +1,479 @@
+{
+  "gpu_info": {
+    "gpu_name": "NVIDIA GeForce RTX 3050",
+    "gpu_vram_mb": 5795,
+    "cuda_version": "12.8",
+    "pytorch_version": "2.10.0+cu128",
+    "compute_capability": "8.6"
+  },
+  "kernel_results": [
+    {
+      "kv_len": 256,
+      "mode": "normal",
+      "flops": {
+        "qk_flops": 1048576,
+        "softmax_flops": 20480,
+        "av_flops": 1048576,
+        "total_flops": 2117632
+      },
+      "dram": {
+        "q_bytes": 4096,
+        "k_bytes": 1048576,
+        "v_bytes": 1048576,
+        "attn_materialized_bytes": 65536,
+        "out_bytes": 4096,
+        "total_read": 2134016,
+        "total_write": 36864,
+        "total_bytes": 2170880
+      },
+      "timing": {
+        "backend": "normal_decode (MATH)",
+        "median_latency_ms": 0.1758,
+        "std_latency_ms": 0.0068,
+        "min_latency_ms": 0.1731,
+        "max_latency_ms": 0.2048,
+        "all_latencies_ms": [
+          0.2048,
+          0.1832,
+          0.1792,
+          0.1792,
+          0.1759,
+          0.1761,
+          0.1741,
+          0.1741,
+          0.1758,
+          0.1731,
+          0.1761,
+          0.1749,
+          0.1761,
+          0.1751,
+          0.176,
+          0.1782,
+          0.1741,
+          0.1758,
+          0.1751,
+          0.1741
+        ]
+      },
+      "derived": {
+        "arithmetic_intensity": 0.9755,
+        "achieved_bw_gbs": 12.35,
+        "bw_utilization_pct": 6.43,
+        "achieved_tflops": 0.012,
+        "compute_utilization_pct": 0.27
+      }
+    },
+    {
+      "kv_len": 256,
+      "mode": "flash",
+      "flops": {
+        "qk_flops": 1048576,
+        "softmax_flops": 20480,
+        "av_flops": 1048576,
+        "total_flops": 2117632
+      },
+      "dram": {
+        "q_bytes": 4096,
+        "k_bytes": 1048576,
+        "v_bytes": 1048576,
+        "attn_materialized_bytes": 0,
+        "out_bytes": 4096,
+        "total_read": 2101248,
+        "total_write": 4096,
+        "total_bytes": 2105344
+      },
+      "timing": {
+        "backend": "flash_decoding (FLASH_ATTENTION)",
+        "median_latency_ms": 0.0717,
+        "std_latency_ms": 0.0023,
+        "min_latency_ms": 0.0696,
+        "max_latency_ms": 0.0812,
+        "all_latencies_ms": [
+          0.0812,
+          0.0736,
+          0.0717,
+          0.0717,
+          0.0717,
+          0.0713,
+          0.0717,
+          0.0707,
+          0.0717,
+          0.0717,
+          0.0709,
+          0.0707,
+          0.0707,
+          0.0717,
+          0.0717,
+          0.0717,
+          0.0709,
+          0.0696,
+          0.0707,
+          0.0717
+        ]
+      },
+      "derived": {
+        "arithmetic_intensity": 1.0058,
+        "achieved_bw_gbs": 29.36,
+        "bw_utilization_pct": 15.29,
+        "achieved_tflops": 0.0295,
+        "compute_utilization_pct": 0.67
+      }
+    },
+    {
+      "kv_len": 512,
+      "mode": "normal",
+      "flops": {
+        "qk_flops": 2097152,
+        "softmax_flops": 40960,
+        "av_flops": 2097152,
+        "total_flops": 4235264
+      },
+      "dram": {
+        "q_bytes": 4096,
+        "k_bytes": 2097152,
+        "v_bytes": 2097152,
+        "attn_materialized_bytes": 131072,
+        "out_bytes": 4096,
+        "total_read": 4263936,
+        "total_write": 69632,
+        "total_bytes": 4333568
+      },
+      "timing": {
+        "backend": "normal_decode (MATH)",
+        "median_latency_ms": 0.2994,
+        "std_latency_ms": 0.0236,
+        "min_latency_ms": 0.297,
+        "max_latency_ms": 0.384,
+        "all_latencies_ms": [
+          0.3656,
+          0.3018,
+          0.299,
+          0.3,
+          0.298,
+          0.3007,
+          0.3011,
+          0.3,
+          0.297,
+          0.2998,
+          0.384,
+          0.3,
+          0.3,
+          0.2979,
+          0.298,
+          0.297,
+          0.298,
+          0.2977,
+          0.298,
+          0.298
+        ]
+      },
+      "derived": {
+        "arithmetic_intensity": 0.9773,
+        "achieved_bw_gbs": 14.47,
+        "bw_utilization_pct": 7.54,
+        "achieved_tflops": 0.0141,
+        "compute_utilization_pct": 0.32
+      }
+    },
+    {
+      "kv_len": 512,
+      "mode": "flash",
+      "flops": {
+        "qk_flops": 2097152,
+        "softmax_flops": 40960,
+        "av_flops": 2097152,
+        "total_flops": 4235264
+      },
+      "dram": {
+        "q_bytes": 4096,
+        "k_bytes": 2097152,
+        "v_bytes": 2097152,
+        "attn_materialized_bytes": 0,
+        "out_bytes": 4096,
+        "total_read": 4198400,
+        "total_write": 4096,
+        "total_bytes": 4202496
+      },
+      "timing": {
+        "backend": "flash_decoding (FLASH_ATTENTION)",
+        "median_latency_ms": 0.1116,
+        "std_latency_ms": 0.0013,
+        "min_latency_ms": 0.1103,
+        "max_latency_ms": 0.1157,
+        "all_latencies_ms": [
+          0.1157,
+          0.1137,
+          0.1106,
+          0.1135,
+          0.1106,
+          0.1116,
+          0.1103,
+          0.1116,
+          0.1106,
+          0.1116,
+          0.1116,
+          0.1116,
+          0.1116,
+          0.1112,
+          0.1116,
+          0.1106,
+          0.1106,
+          0.1116,
+          0.1105,
+          0.1114
+        ]
+      },
+      "derived": {
+        "arithmetic_intensity": 1.0078,
+        "achieved_bw_gbs": 37.66,
+        "bw_utilization_pct": 19.61,
+        "achieved_tflops": 0.038,
+        "compute_utilization_pct": 0.86
+      }
+    },
+    {
+      "kv_len": 1024,
+      "mode": "normal",
+      "flops": {
+        "qk_flops": 4194304,
+        "softmax_flops": 81920,
+        "av_flops": 4194304,
+        "total_flops": 8470528
+      },
+      "dram": {
+        "q_bytes": 4096,
+        "k_bytes": 4194304,
+        "v_bytes": 4194304,
+        "attn_materialized_bytes": 262144,
+        "out_bytes": 4096,
+        "total_read": 8523776,
+        "total_write": 135168,
+        "total_bytes": 8658944
+      },
+      "timing": {
+        "backend": "normal_decode (MATH)",
+        "median_latency_ms": 0.5386,
+        "std_latency_ms": 0.0231,
+        "min_latency_ms": 0.5356,
+        "max_latency_ms": 0.641,
+        "all_latencies_ms": [
+          0.5427,
+          0.5396,
+          0.5386,
+          0.5373,
+          0.5376,
+          0.5384,
+          0.641,
+          0.5386,
+          0.5386,
+          0.5386,
+          0.5386,
+          0.5359,
+          0.5377,
+          0.5386,
+          0.5385,
+          0.5376,
+          0.5386,
+          0.5362,
+          0.5356,
+          0.5356
+        ]
+      },
+      "derived": {
+        "arithmetic_intensity": 0.9782,
+        "achieved_bw_gbs": 16.08,
+        "bw_utilization_pct": 8.37,
+        "achieved_tflops": 0.0157,
+        "compute_utilization_pct": 0.36
+      }
+    },
+    {
+      "kv_len": 1024,
+      "mode": "flash",
+      "flops": {
+        "qk_flops": 4194304,
+        "softmax_flops": 81920,
+        "av_flops": 4194304,
+        "total_flops": 8470528
+      },
+      "dram": {
+        "q_bytes": 4096,
+        "k_bytes": 4194304,
+        "v_bytes": 4194304,
+        "attn_materialized_bytes": 0,
+        "out_bytes": 4096,
+        "total_read": 8392704,
+        "total_write": 4096,
+        "total_bytes": 8396800
+      },
+      "timing": {
+        "backend": "flash_decoding (FLASH_ATTENTION)",
+        "median_latency_ms": 0.1823,
+        "std_latency_ms": 0.0011,
+        "min_latency_ms": 0.1805,
+        "max_latency_ms": 0.1854,
+        "all_latencies_ms": [
+          0.1854,
+          0.1833,
+          0.1823,
+          0.1823,
+          0.1833,
+          0.1821,
+          0.1823,
+          0.1812,
+          0.1833,
+          0.1812,
+          0.1812,
+          0.1823,
+          0.1812,
+          0.1823,
+          0.1805,
+          0.1812,
+          0.1823,
+          0.1812,
+          0.1823,
+          0.1821
+        ]
+      },
+      "derived": {
+        "arithmetic_intensity": 1.0088,
+        "achieved_bw_gbs": 46.06,
+        "bw_utilization_pct": 23.99,
+        "achieved_tflops": 0.0465,
+        "compute_utilization_pct": 1.06
+      }
+    },
+    {
+      "kv_len": 2048,
+      "mode": "normal",
+      "flops": {
+        "qk_flops": 8388608,
+        "softmax_flops": 163840,
+        "av_flops": 8388608,
+        "total_flops": 16941056
+      },
+      "dram": {
+        "q_bytes": 4096,
+        "k_bytes": 8388608,
+        "v_bytes": 8388608,
+        "attn_materialized_bytes": 524288,
+        "out_bytes": 4096,
+        "total_read": 17043456,
+        "total_write": 266240,
+        "total_bytes": 17309696
+      },
+      "timing": {
+        "backend": "normal_decode (MATH)",
+        "median_latency_ms": 1.0312,
+        "std_latency_ms": 0.0236,
+        "min_latency_ms": 1.0284,
+        "max_latency_ms": 1.1365,
+        "all_latencies_ms": [
+          1.0394,
+          1.0342,
+          1.0311,
+          1.0322,
+          1.0332,
+          1.0332,
+          1.0312,
+          1.0322,
+          1.0294,
+          1.0312,
+          1.0312,
+          1.0284,
+          1.1365,
+          1.0291,
+          1.0312,
+          1.0312,
+          1.0292,
+          1.0301,
+          1.0301,
+          1.0332
+        ]
+      },
+      "derived": {
+        "arithmetic_intensity": 0.9787,
+        "achieved_bw_gbs": 16.79,
+        "bw_utilization_pct": 8.74,
+        "achieved_tflops": 0.0164,
+        "compute_utilization_pct": 0.37
+      }
+    },
+    {
+      "kv_len": 2048,
+      "mode": "flash",
+      "flops": {
+        "qk_flops": 8388608,
+        "softmax_flops": 163840,
+        "av_flops": 8388608,
+        "total_flops": 16941056
+      },
+      "dram": {
+        "q_bytes": 4096,
+        "k_bytes": 8388608,
+        "v_bytes": 8388608,
+        "attn_materialized_bytes": 0,
+        "out_bytes": 4096,
+        "total_read": 16781312,
+        "total_write": 4096,
+        "total_bytes": 16785408
+      },
+      "timing": {
+        "backend": "flash_decoding (FLASH_ATTENTION)",
+        "median_latency_ms": 0.327,
+        "std_latency_ms": 0.0216,
+        "min_latency_ms": 0.3264,
+        "max_latency_ms": 0.4239,
+        "all_latencies_ms": [
+          0.3315,
+          0.3295,
+          0.3264,
+          0.3277,
+          0.3271,
+          0.3267,
+          0.3284,
+          0.3267,
+          0.3277,
+          0.3278,
+          0.3265,
+          0.3277,
+          0.327,
+          0.3267,
+          0.3276,
+          0.3266,
+          0.3267,
+          0.3267,
+          0.3267,
+          0.4239
+        ]
+      },
+      "derived": {
+        "arithmetic_intensity": 1.0093,
+        "achieved_bw_gbs": 51.33,
+        "bw_utilization_pct": 26.74,
+        "achieved_tflops": 0.0518,
+        "compute_utilization_pct": 1.18
+      }
+    }
+  ],
+  "e2e_results": [
+    {
+      "backend": "normal_decode (MATH)",
+      "prompt_len": 512,
+      "max_new_tokens": 64,
+      "median_latency_s": 1.3917,
+      "median_tokens_per_sec": 45.99,
+      "median_peak_memory_mb": 1560.05,
+      "tokens_generated": 64
+    },
+    {
+      "backend": "flash_decoding (FLASH_ATTENTION)",
+      "prompt_len": 512,
+      "max_new_tokens": 64,
+      "median_latency_s": 1.0039,
+      "median_tokens_per_sec": 63.75,
+      "median_peak_memory_mb": 1527.78,
+      "tokens_generated": 64
+    }
+  ]
+}

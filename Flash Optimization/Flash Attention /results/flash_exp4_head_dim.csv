@@ -1,0 +1,7 @@
+backend,head_dim,median_latency_ms,std_latency_ms,median_peak_memory_mb,seq_len,num_query_heads,num_kv_heads,num_runs
+flash,32,0.135,0.004,11.19,1024,16,8,5
+math,32,6.084,0.009,168.14,1024,16,8,5
+flash,64,0.216,0.006,14.19,1024,16,8,5
+math,64,6.381,0.005,180.14,1024,16,8,5
+flash,128,0.345,0.005,20.19,1024,16,8,5
+math,128,7.198,0.01,204.14,1024,16,8,5

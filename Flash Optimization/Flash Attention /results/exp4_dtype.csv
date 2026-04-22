@@ -1,0 +1,7 @@
+dtype,implementation,seq_len,actual_input_len,batch_size,max_new_tokens,median_latency_s,std_latency_s,median_tokens_per_sec,median_ttft_s,median_peak_memory_mb,num_runs
+float16,eager,256,256,1,128,1.7823,0.0026,71.82,0.0412,1488.19,5
+float16,eager,512,512,1,128,2.0157,0.0012,63.5,0.0918,1539.54,5
+float16,eager,1024,1024,1,128,2.5068,0.002,51.06,0.2233,1702.31,5
+bfloat16,eager,256,256,1,128,1.7959,0.0012,71.27,0.043,1488.21,5
+bfloat16,eager,512,512,1,128,2.034,0.0008,62.93,0.101,1547.54,5
+bfloat16,eager,1024,1024,1,128,2.5494,0.0023,50.21,0.2466,1734.31,5

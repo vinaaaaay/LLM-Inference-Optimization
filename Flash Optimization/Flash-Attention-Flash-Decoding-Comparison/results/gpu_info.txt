@@ -1,0 +1,5 @@
+gpu_name: NVIDIA GeForce RTX 3050
+gpu_vram_mb: 5795
+cuda_version: 12.8
+pytorch_version: 2.10.0+cu128
+compute_capability: 8.6
